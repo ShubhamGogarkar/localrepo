@@ -1,18 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>div { border: 1px solid black;
-    height: 222px; 
-background-color: aqua;}
-    div >div { border: 2px solid red;
-    height: 111px;
-    width: 111px;
-    background-color: pink; }</style>
+    <style>
+        div {
+            border: 1px solid black;
+            height: 222px;
+            background-color: aqua;
+            
+        }
+        @keyframes move {
+            from {
+                width: 222px;
+                
+            }
+            to {
+                width: 100%;
+                background-color: yellow;
+            }
+        }
+
+        div>div {
+            border: 2px solid red;
+            height: 111px;
+            width: 111px;
+            background-color: pink;
+            animation: 3s infinite alternate move;
+        }
+    </style>
 </head>
+
 <body>
-    <div><div ></div></div>
+    <div>
+        <div></div>
+    </div>
 </body>
+
 </html>
